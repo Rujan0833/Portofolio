@@ -1,0 +1,73 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const Education = () => {
+  const educationData = [
+    {
+      degree: "Bachelor of Computer Science",
+      institution: "Tribhuvan University",
+      duration: "2021 - Present",
+      description: "Currently pursuing a degree in Computer Science with a focus on software development and web technologies.",
+      courses: ["Data Structures", "Algorithms", "Database Management", "Web Development"]
+    },
+    {
+      degree: "Higher Secondary Education",
+      institution: "Little Angels School",
+      duration: "2018 - 2020",
+      description: "Completed higher secondary education with a focus on science and mathematics.",
+      courses: ["Physics", "Mathematics", "Computer Science", "English"]
+    }
+  ];
+
+  return (
+    <section id="education" className="py-20 bg-gradient-to-b from-gray-900 to-black">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl font-bold gradient-text mb-4 leading-relaxed py-1">Education</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-2"></div>
+        </motion.div>
+
+        <div className="space-y-12">
+          {educationData.map((edu, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-blue-400 to-purple-600 rounded-full"></div>
+              <div className="ml-8">
+                <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50">
+                  <h3 className="text-2xl font-bold text-white mb-2">{edu.degree}</h3>
+                  <p className="text-blue-400 mb-2">{edu.institution}</p>
+                  <p className="text-gray-400 mb-4">{edu.duration}</p>
+                  <p className="text-gray-300 mb-4">{edu.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {edu.courses.map((course, courseIndex) => (
+                      <span
+                        key={courseIndex}
+                        className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-sm"
+                      >
+                        {course}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Education; 
