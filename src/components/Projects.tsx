@@ -8,7 +8,7 @@ const Projects = () => {
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations and interactive components.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/Rujan0833/portfolio",
+      github: "https://github.com/Rujan0833/Portofolio.git",
       image: "/projects/image.png",
       demo: "https://rujan-portfolio.vercel.app"
     },
@@ -31,7 +31,7 @@ const Projects = () => {
     {
       title: "Interactive Government Site",
       description: "A modern government website prototype focusing on user experience and accessibility, featuring interactive service portals.",
-      technologies: ["Figma", "React", "Tailwind CSS", "Framer Motion"],
+      technologies: ["Figma"],
       figma: "https://www.figma.com/proto/ArXOveVBO4foWdEQpIdQ6B/Government-Site?node-id=5-196",
       image: "/projects/goverment.png"
     }
@@ -99,7 +99,7 @@ const Projects = () => {
                 <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
                 <p className="text-gray-300 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, techIndex) => (
+                  {project.technologies && project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
                       className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-sm"
