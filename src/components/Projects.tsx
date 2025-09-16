@@ -5,6 +5,23 @@ import Image from 'next/image';
 const Projects = () => {
   const projects = [
     {
+      title: "Blockchain Charity Platform",
+      description:
+        "Decentralized charity platform on Ethereum testnet with Solidity smart contracts, Django REST API admin dashboard, Next.js frontend, Merkle Tree verification for donation transparency, and Web3 wallet connectivity with real-time transaction tracking.",
+      technologies: [
+        "Solidity",
+        "Next.js",
+        "Django REST",
+        "Ethers.js",
+        "Web3.js",
+        "IPFS",
+        "Merkle Trees"
+      ],
+      github: "https://github.com/Rujan0833/Blockchain-Project.git",
+      image: "/projects/mainpage.png",
+      
+    },
+    {
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations and interactive components.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],

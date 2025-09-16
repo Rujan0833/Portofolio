@@ -92,9 +92,14 @@ const Navbar = () => {
             {/* Mobile Navigation Button */}
             <div className="md:hidden">
               <button
+                type="button"
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-gray-300 hover:text-white p-2"
+                aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+                title={isOpen ? 'Close menu' : 'Open menu'}
+                aria-haspopup="true"
               >
+                <span className="sr-only">{isOpen ? 'Close menu' : 'Open menu'}</span>
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -123,6 +128,7 @@ const Navbar = () => {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden bg-gray-900/95 backdrop-blur-sm"
+              id="mobile-nav"
             >
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navItems.map((item) => (

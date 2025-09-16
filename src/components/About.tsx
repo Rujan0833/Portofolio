@@ -4,16 +4,28 @@ import { motion } from 'framer-motion';
 const About = () => {
   const skills = [
     {
+      category: "Languages",
+      items: ["JavaScript", "TypeScript", "Python", "Solidity"]
+    },
+    {
       category: "Frontend",
-      items: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"]
+      items: ["React.js", "Next.js", "Tailwind CSS"]
     },
     {
       category: "Backend",
-      items: ["Node.js", "Express", "MongoDB", "REST APIs"]
+      items: ["Node.js", "Django", "REST APIs"]
     },
     {
-      category: "Languages",
-      items: ["JavaScript", "Python", "C++", "SQL"]
+      category: "Databases",
+      items: ["MongoDB", "PostgreSQL"]
+    },
+    {
+      category: "Blockchain & Web3",
+      items: ["Smart Contracts", "Ethers.js", "IPFS"]
+    },
+    {
+      category: "Tools & Platforms",
+      items: ["Git/GitHub", "Docker", "Vercel"]
     }
   ];
 
@@ -31,13 +43,13 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-2"></div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-4"
           >
             <p className="text-gray-300 text-lg">
               I am a passionate Computer Science student and web developer with a strong foundation in both front-end and back-end technologies. My journey in programming began with a curiosity for creating digital solutions that make a difference.
@@ -45,11 +57,11 @@ const About = () => {
             <p className="text-gray-300 text-lg">
               I specialize in building responsive, user-focused applications using modern technologies like React, Next.js, and TypeScript. My approach combines technical expertise with creative problem-solving to deliver exceptional user experiences.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <span className="px-4 py-2 bg-blue-500/10 text-blue-400 rounded-full hover:bg-blue-500/20 transition-colors">React</span>
-              <span className="px-4 py-2 bg-purple-500/10 text-purple-400 rounded-full hover:bg-purple-500/20 transition-colors">TypeScript</span>
-              <span className="px-4 py-2 bg-green-500/10 text-green-400 rounded-full hover:bg-green-500/20 transition-colors">Node.js</span>
-              <span className="px-4 py-2 bg-yellow-500/10 text-yellow-400 rounded-full hover:bg-yellow-500/20 transition-colors">Tailwind CSS</span>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1.5 text-sm bg-blue-500/10 text-blue-400 rounded-full hover:bg-blue-500/20 transition-colors">React</span>
+              <span className="px-3 py-1.5 text-sm bg-purple-500/10 text-purple-400 rounded-full hover:bg-purple-500/20 transition-colors">TypeScript</span>
+              <span className="px-3 py-1.5 text-sm bg-green-500/10 text-green-400 rounded-full hover:bg-green-500/20 transition-colors">Node.js</span>
+              <span className="px-3 py-1.5 text-sm bg-yellow-500/10 text-yellow-400 rounded-full hover:bg-yellow-500/20 transition-colors">Tailwind CSS</span>
             </div>
           </motion.div>
 
@@ -60,8 +72,8 @@ const About = () => {
             viewport={{ once: true }}
             className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50"
           >
-            <h3 className="text-2xl font-bold text-white mb-8">Skills</h3>
-            <div className="space-y-8">
+            <h3 className="text-2xl font-bold text-white mb-6">Skills</h3>
+            <div className="space-y-6">
               {skills.map((skillGroup, groupIndex) => (
                 <motion.div
                   key={skillGroup.category}
@@ -70,8 +82,8 @@ const About = () => {
                   transition={{ duration: 0.5, delay: groupIndex * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <h4 className="text-lg font-semibold text-blue-400 mb-4">{skillGroup.category}</h4>
-                  <div className="flex flex-wrap gap-3">
+                  <h4 className="text-lg font-semibold text-blue-400 mb-3">{skillGroup.category}</h4>
+                  <div className="flex flex-wrap gap-2">
                     {skillGroup.items.map((skill, index) => (
                       <motion.span
                         key={skill}
@@ -79,7 +91,7 @@ const About = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.3, delay: index * 0.1 }}
                         viewport={{ once: true }}
-                        className="px-4 py-2 bg-gray-700/50 text-gray-300 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-colors"
+                        className="px-3 py-1.5 text-sm bg-gray-700/50 text-gray-300 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-colors"
                       >
                         {skill}
                       </motion.span>

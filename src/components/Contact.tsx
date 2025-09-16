@@ -77,7 +77,7 @@ const Contact = () => {
                 <span>github.com/Rujan0833</span>
               </a>
               <a
-                href="https://linkedin.com/in/rujan-rajlawat"
+                href="https://www.linkedin.com/in/rujan-rajlawat-a0a188363/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-gray-300 hover:text-white transition-colors"
