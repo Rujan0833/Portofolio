@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light mode defaults */
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  /* Dark mode (when .dark is present on html element) */
+  .dark body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    /* Black / gray gradient for headings in light mode */
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700;
+  }
+
+  /* Lighter gray gradient for dark mode so it remains visible on dark backgrounds */
+  .dark .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-200 via-slate-300 to-slate-400;
+  }
+} 
