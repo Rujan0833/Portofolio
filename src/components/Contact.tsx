@@ -18,7 +18,7 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold gradient-text mb-4 leading-relaxed py-1">Contact Me</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-2"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-gray-900 to-gray-100 dark:from-gray-100 dark:to-gray-900 mx-auto mt-2"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -142,8 +142,7 @@ const Contact = () => {
               </div>
               <motion.button
                 type="submit"
-                className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:from-blue-600 hover:to-purple-700 transition-all transform hover:-translate-y-1 hover:shadow-lg"
-                whileHover={{ scale: 1.02 }}
+                className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-gray-800 to-black text-white font-medium hover:from-gray-900 hover:to-gray-800 transition-all transform hover:-translate-y-1 hover:shadow-lg"
                 whileTap={{ scale: 0.98 }}
               >
                 Send Message

@@ -40,7 +40,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold gradient-text mb-4 leading-relaxed">About Me</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mt-2"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-gray-900 to-gray-100 dark:from-gray-100 dark:to-gray-900 mx-auto mt-2"></div>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 items-start">
@@ -82,7 +82,7 @@ const About = () => {
                   transition={{ duration: 0.5, delay: groupIndex * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <h4 className="text-lg font-semibold text-blue-400 mb-3">{skillGroup.category}</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">{skillGroup.category}</h4>
                   <div className="flex flex-wrap gap-2">
                     {skillGroup.items.map((skill, index) => (
                       <motion.span

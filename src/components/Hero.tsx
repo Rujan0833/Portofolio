@@ -60,7 +60,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.span 
-            className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-500/10 text-blue-600 dark:text-blue-400"
+            className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-900/10 text-gray-900 dark:bg-white/10 dark:text-white"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
@@ -102,7 +102,7 @@ const Hero = () => {
           >
             <motion.a 
               href="#projects"
-              className="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium transition-all transform hover:-translate-y-1 hover:shadow-lg"
+              className="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white font-medium transition-all transform hover:-translate-y-1 hover:shadow-lg dark:from-white dark:via-gray-100 dark:to-gray-200 dark:text-gray-900"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -110,7 +110,7 @@ const Hero = () => {
             </motion.a>
             <motion.a 
               href="#contact"
-              className="inline-flex items-center px-6 py-3 rounded-lg border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-medium transition-all transform hover:-translate-y-1 hover:shadow-lg"
+              className="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white font-medium transition-all transform hover:-translate-y-1 hover:shadow-lg dark:from-white dark:via-gray-100 dark:to-gray-200 dark:text-gray-900"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

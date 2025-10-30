@@ -5,12 +5,12 @@
 @layer base {
   /* Light mode defaults */
   body {
-    @apply bg-white text-gray-900;
+    @apply bg-white text-gray-900 font-sans;
   }
 
   /* Dark mode (when .dark is present on html element) */
   .dark body {
-    @apply bg-black text-white;
+    @apply bg-black text-white font-sans;
   }
 }
 

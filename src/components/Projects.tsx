@@ -65,7 +65,7 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold gradient-text mb-4 leading-relaxed py-1">Projects</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-gray-900 via-gray-800 to-black mx-auto mt-2"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-gray-900 to-gray-100 dark:from-gray-100 dark:to-gray-900 mx-auto mt-2"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -113,13 +113,13 @@ const Projects = () => {
                 </div>
               </div>
                   <div className="p-6 bg-white dark:bg-gray-800">
-  <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 mb-2">{project.title}</h3>
+  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{project.title}</h3>
         <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                         {project.technologies && project.technologies.map((tech, techIndex) => (
                           <span
                             key={techIndex}
-                            className="px-3 py-1 bg-blue-100 text-blue-700 dark:bg-blue-500/10 dark:text-blue-400 rounded-full text-sm"
+                            className="px-3 py-1.5 text-sm bg-gray-200/50 dark:bg-gray-700/50 text-gray-800 dark:text-gray-300 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-colors"
                           >
                             {tech}
                           </span>

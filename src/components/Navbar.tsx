@@ -65,7 +65,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <motion.div
-              className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text"
+              className="text-xl font-bold bg-gradient-to-r from-gray-900 to-black text-transparent bg-clip-text dark:from-white dark:to-gray-200"
               whileHover={{ scale: 1.05 }}
               onClick={() => scrollToSection('home')}
               style={{ cursor: 'pointer' }}
@@ -81,7 +81,7 @@ const Navbar = () => {
                   onClick={() => scrollToSection(item.id)}
                   className={`text-sm transition-colors ${
                     activeSection === item.id
-                      ? 'text-blue-600 dark:text-blue-400'
+                      ? 'text-gray-900 dark:text-white'
                       : 'text-gray-300 hover:text-white'
                   }`}
                   whileHover={{ scale: 1.1 }}
@@ -147,7 +147,7 @@ const Navbar = () => {
                     onClick={() => scrollToSection(item.id)}
                     className={`block w-full text-left px-3 py-2 rounded-md text-base ${
                       activeSection === item.id
-                        ? 'text-blue-600 dark:text-blue-400 bg-gray-100 dark:bg-gray-800'
+                        ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800'
                         : 'text-gray-700 dark:text-gray-300 hover:dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700'
                     }`}
                     whileHover={{ x: 10 }}
