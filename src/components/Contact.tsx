@@ -105,7 +105,7 @@ const Contact = () => {
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300">
+                <label htmlFor="name" className="text-gray-700 dark:text-gray-300 mb-4">
                   Name
                 </label>
                 <input
@@ -117,7 +117,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300">
+                <label htmlFor="email" className="text-gray-700 dark:text-gray-300 mb-4">
                   Email
                 </label>
                 <input
@@ -129,7 +129,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300">
+                <label htmlFor="message" className="text-gray-700 dark:text-gray-300 mb-4">
                   Message
                 </label>
                 <textarea
