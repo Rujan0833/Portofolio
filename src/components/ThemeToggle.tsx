@@ -18,16 +18,29 @@ const ThemeToggle: React.FC = () => {
 
   const toggle = () => setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
 
-  return (
-    <button
-      onClick={toggle}
-      aria-label="Toggle theme"
-      title="Toggle theme"
-      className="p-2 rounded-md bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
-    >
-      {theme === 'dark' ? '☀️' : '🌙'}
-    </button>
-  );
+return (
+  <button
+    onClick={toggle}
+    aria-label="Toggle theme"
+    title="Toggle theme"
+    className="p-2 rounded-md bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 transition-colors"
+  >
+    {theme === 'dark' ? (
+      <img
+        src="/projects/green.svg"
+        alt="Light mode"
+        className="w-5 h-5"
+      />
+    ) : (
+      <img
+        src="/projects/dark.svg"
+        alt="Dark mode"
+        className="w-5 h-5"
+      />
+    )}
+  </button>
+);
+
 };
 
 export default ThemeToggle;

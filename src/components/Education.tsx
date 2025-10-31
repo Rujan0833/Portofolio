@@ -51,7 +51,7 @@ const Education = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-blue-400 to-purple-600 rounded-full"></div>
+              <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-gray-900 to-gray-100 rounded-full"></div>
               <div className="ml-8">
                 <div className="bg-gray-100/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-200/50 dark:border-gray-700/50">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{edu.degree}</h3>

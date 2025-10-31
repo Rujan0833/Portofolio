@@ -40,11 +40,23 @@ const About: React.FC = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1.5 text-sm bg-gray-900/10 text-gray-900 dark:bg-white/10 dark:text-white rounded-full hover:bg-gray-900/20 dark:hover:bg-white/20 transition-colors">React</span>
-                  <span className="px-3 py-1.5 text-sm bg-gray-900/10 text-gray-900 dark:bg-white/10 dark:text-white rounded-full hover:bg-gray-900/20 dark:hover:bg-white/20 transition-colors">TypeScript</span>
-                  <span className="px-3 py-1.5 text-sm bg-gray-900/10 text-gray-900 dark:bg-white/10 dark:text-white rounded-full hover:bg-gray-900/20 dark:hover:bg-white/20 transition-colors">Node.js</span>
-                  <span className="px-3 py-1.5 text-sm bg-gray-900/10 text-gray-900 dark:bg-white/10 dark:text-white rounded-full hover:bg-gray-900/20 dark:hover:bg-white/20 transition-colors">Tailwind CSS</span>
+                  <span className="px-3 py-1.5 text-sm bg-blue-900/20 text-blue-800 dark:bg-blue-500/20 dark:text-blue-300 rounded-full hover:bg-blue-900/30 dark:hover:bg-blue-500/30 transition-colors">
+                    React
+                  </span>
+
+                  <span className="px-3 py-1.5 text-sm bg-sky-500/20 text-sky-700 dark:bg-sky-400/20 dark:text-sky-300 rounded-full hover:bg-sky-500/30 dark:hover:bg-sky-400/30 transition-colors">
+                    TypeScript
+                  </span>
+
+                  <span className="px-3 py-1.5 text-sm bg-green-600/20 text-green-700 dark:bg-green-500/20 dark:text-green-300 rounded-full hover:bg-green-600/30 dark:hover:bg-green-500/30 transition-colors">
+                    Node.js
+                  </span>
+
+                  <span className="px-3 py-1.5 text-sm bg-cyan-400/20 text-cyan-700 dark:bg-cyan-400/20 dark:text-cyan-300 rounded-full hover:bg-cyan-400/30 dark:hover:bg-cyan-400/30 transition-colors">
+                    Tailwind CSS
+                  </span>
                 </div>
+
               </motion.div>
 
               <motion.div
