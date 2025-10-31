@@ -33,15 +33,10 @@ const About: React.FC = () => {
                 viewport={{ once: true }}
                 className="space-y-4"
               >
-                <p className="text-gray-700 dark:text-gray-300 text-lg">
-                  I am a passionate Computer Science student and web developer with a strong foundation in both front-end and
-                  back-end technologies. My journey in programming began with a curiosity for creating digital solutions that
-                  make a difference.
-                </p>
-                <p className="text-gray-700 dark:text-gray-300 text-lg">
-                  I specialize in building responsive, user-focused applications using modern technologies like React,
-                  Next.js, and TypeScript. My approach combines technical expertise with creative problem-solving to deliver
-                  exceptional user experiences.
+                <p className="max-w-3xl mx-auto text-left text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+                   Web developer experienced in building full-stack applications with React.js, Next.js, Django, and blockchain technologies. 
+                   Skilled in creating user-friendly interfaces, secure authentication systems, and smart contract integrations. Passionate about
+                    solving real-world problems with clean, functional code and always exploring new technologies to grow as a developer.
                 </p>
 
                 <div className="flex flex-wrap gap-2">
