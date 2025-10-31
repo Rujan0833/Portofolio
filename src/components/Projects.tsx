@@ -55,7 +55,7 @@ const Projects = () => {
   ];
 
   return (
-  <section id="projects" className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900">
+    <section id="projects" className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold gradient-text mb-4 leading-relaxed py-1">Projects</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-gray-900 to-gray-100 dark:from-gray-100 dark:to-gray-900 mx-auto mt-2"></div>
+    <div className="w-24 h-1 bg-gradient-to-r from-gray-900 to-gray-100 dark:from-gray-100 dark:to-gray-900 mx-auto mt-2"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -112,18 +112,18 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-                  <div className="p-6 bg-white dark:bg-gray-800">
-  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{project.title}</h3>
-        <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
+              <div className="p-6 bg-white dark:bg-gray-800">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{project.title}</h3>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                        {project.technologies && project.technologies.map((tech, techIndex) => (
-                          <span
-                            key={techIndex}
-                            className="px-3 py-1.5 text-sm bg-gray-200/50 dark:bg-gray-700/50 text-gray-800 dark:text-gray-300 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-colors"
-                          >
-                            {tech}
-                          </span>
-                        ))}
+                  {project.technologies && project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="px-3 py-1.5 text-sm bg-gray-200/50 dark:bg-gray-700/50 text-gray-800 dark:text-gray-300 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-colors"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
                 <div className="flex gap-4">
                   {project.github && (
@@ -136,16 +136,16 @@ const Projects = () => {
                       GitHub
                     </a>
                   )}
-                    {project.demo && (
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors"
-                      >
-                        Live Demo
-                      </a>
-                    )}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                   {project.figma && (
                     <a
                       href={project.figma}

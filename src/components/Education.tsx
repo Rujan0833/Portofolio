@@ -1,8 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+interface EducationItem {
+  degree: string;
+  institution: string;
+  duration: string;
+  description: string;
+  courses: string[];
+}
+
 const Education = () => {
-  const educationData = [
+  const educationData: EducationItem[] = [
     {
       degree: "Bachelor of Computer Science",
       institution: "Tribhuvan University",
@@ -34,7 +42,7 @@ const Education = () => {
         </motion.div>
 
         <div className="space-y-12">
-          {educationData.map((edu, index) => (
+          {educationData.map((edu: EducationItem, index: number) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -51,7 +59,7 @@ const Education = () => {
                   <p className="text-gray-700 dark:text-gray-400 mb-4">{edu.duration}</p>
                   <p className="text-gray-700 dark:text-gray-300 mb-4">{edu.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {edu.courses.map((course, courseIndex) => (
+                    {edu.courses.map((course: string, courseIndex: number) => (
                       <span
                         key={courseIndex}
                         className="px-3 py-1.5 text-sm bg-gray-200/50 dark:bg-gray-700/50 text-gray-800 dark:text-gray-300 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-colors"

@@ -50,7 +50,7 @@ const Hero = () => {
   ];
 
   return (
-  <section id="home" className="min-h-screen flex items-center py-20 bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-black relative">
+    <section id="home" className="min-h-screen flex items-center py-20 bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-black relative">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,102,255,0.1),rgba(255,255,255,0)_600px)] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         <motion.div 

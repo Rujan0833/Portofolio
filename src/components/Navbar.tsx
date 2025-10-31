@@ -69,9 +69,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               onClick={() => scrollToSection('home')}
               style={{ cursor: 'pointer' }}
-            >
-              
-            </motion.div>
+            ></motion.div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
