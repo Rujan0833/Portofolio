@@ -78,7 +78,7 @@ const Hero = () => {
             </span>
           </motion.h1>
           <motion.p 
-            className="text-2xl text-gray-300"
+            className="text-gray-700 dark:text-gray-300 text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -86,7 +86,7 @@ const Hero = () => {
             Computer Science Student & Web Developer
           </motion.p>
           <motion.p 
-            className="text-gray-400 max-w-2xl text-lg"
+            className="text-gray-700 dark:text-gray-300 text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}

@@ -78,10 +78,10 @@ const Navbar = () => {
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
                   className={`text-sm transition-colors ${
-                    activeSection === item.id
-                      ? 'text-gray-900 dark:text-white'
-                      : 'text-gray-300 hover:text-white'
-                  }`}
+                  activeSection === item.id
+                    ? 'text-black dark:text-white'
+                    : 'text-black/70 hover:text-black dark:text-gray-300 dark:hover:text-white'
+                }`}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
