@@ -27,7 +27,7 @@ const Projects = () => {
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
       github: "https://github.com/Rujan0833/Portofolio.git",
       image: "/projects/image.png",
-      demo: "https://rujan-portfolio.vercel.app"
+      demo: "https://www.rujanrajlawat.com.np	"
     },
     {
       title: "KantipurFitness",
