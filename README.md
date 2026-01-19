@@ -1,4 +1,5 @@
 🌐 Personal Portfolio
+
 My personal portfolio website built with Next.js and Tailwind CSS. Nothing fancy, just clean and functional.
 Live Site: rujanrajlawat.com.np
 
@@ -10,6 +11,7 @@ TypeScript - Type safety (because I like my code not breaking)
 
 
 💡 What's Inside
+
 This portfolio showcases:
 
 My projects and work
@@ -27,6 +29,7 @@ Every developer needs a place to show off their work, right? This is mine. Simpl
 Plus, it's a good excuse to experiment with Next.js and Tailwind whenever I feel like adding something new.
 
 📝 License
+
 Feel free to fork this and use it as inspiration for your own portfolio. Just don't copy it word-for-word - that's boring.
 
 Built with ☕ and late nights by Rujan
