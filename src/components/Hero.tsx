@@ -20,7 +20,7 @@ const Hero = () => {
       color: 'text-green-400'
     },
     {
-      line: '  skills: ["React", "Next.js", "Node.js", "Blockchain"],',
+      line: '  skills: ["React", "Next.js", "Node.js", "Blockchain", "PayloadCMS", "Git", "GitHub"],',
       color: 'text-green-400'
     },
     {
