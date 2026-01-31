@@ -11,6 +11,7 @@ Clean, minimal, and functional.
 
 * **Next.js** – React framework for production
 * **Tailwind CSS** – Utility-first CSS framework
+* **Resend** – Email delivery with secure contact forms
 * **TypeScript** – Type safety (because I like my code not breaking)
 
 ---
